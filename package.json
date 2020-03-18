@@ -2,9 +2,10 @@
   "name": "api",
   "version": "1.0.0",
   "description": "api for  mspr",
-  "main": "index.js",
+  "main": "dist/core/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rm -rf dist && tsc",
+    "start": "ts-node-dev --respawn --transpileOnly src/core/index.ts"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/rangee-du-fond/api/issues"
   },
-  "homepage": "https://github.com/rangee-du-fond/api#readme"
+  "homepage": "https://github.com/rangee-du-fond/api#readme",
+  "devDependencies": {
+    "@types/node": "^13.9.1",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typescript": "^3.8.3"
+  }
 }
