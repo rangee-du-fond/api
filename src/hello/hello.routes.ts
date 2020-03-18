@@ -6,12 +6,11 @@ export const registerHelloRoutes = (server: Server) => {
     path: '/hello',
     options: {
       tags: ['api'],
-      description: 'route that returns hello world'
+      description: 'route that returns hello world',
     },
     handler: (req, h) => {
       // cast to any to avoid typescript type error
-      return {message: 'hello world!'};
+      return { message: 'hello world!' };
     },
   });
-}
-
+};

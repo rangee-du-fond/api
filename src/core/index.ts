@@ -8,9 +8,7 @@ process.on('unhandledRejection', err => {
   process.exit(1);
 });
 
-export const expectedEnvVariables: EnvVar[] = [
-  { name: 'PORT', default: '3000' },
-];
+export const expectedEnvVariables: EnvVar[] = [{ name: 'PORT', default: '3000' }];
 
 checkMissingEnvVariables(expectedEnvVariables);
 

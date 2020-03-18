@@ -26,7 +26,7 @@ export const initServer = async (config: Config): Promise<Server> => {
 
   await server.register(plugins);
 
-  registerHelloRoutes(server)
+  registerHelloRoutes(server);
 
   return server;
 };

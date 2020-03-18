@@ -4,5 +4,5 @@ export type EnvVar = {
 };
 
 export type Config = {
-  serverPort: string
-}
+  serverPort: string;
+};

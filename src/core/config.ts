@@ -7,5 +7,5 @@ const getEnvDefaultValue = (entries: EnvVar[], varName: string) => {
 export const createConfig = (expectedEnvVariables: EnvVar[]): Config => {
   return {
     serverPort: process.env.PORT || getEnvDefaultValue(expectedEnvVariables, 'PORT'),
-  }
-}
+  };
+};
