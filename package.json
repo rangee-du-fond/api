@@ -5,7 +5,7 @@
   "main": "dist/core/index.js",
   "scripts": {
     "build": "rm -rf dist && tsc",
-    "start": "ts-node-dev --respawn --transpileOnly src/core/index.ts"
+    "start": "dotenv -- ts-node-dev --respawn --transpileOnly src/core/index.ts"
   },
   "repository": {
     "type": "git",
