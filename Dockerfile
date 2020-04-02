@@ -8,4 +8,4 @@ RUN ls
 
 RUN npm i --production && npm audit fix --only=prod
 
-CMD ["node", "src/core/index.js"]
+CMD ["npm", "start"]
