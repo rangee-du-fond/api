@@ -1,8 +1,5 @@
 import { EnvVar, Config } from './core.d';
-
-const getEnvDefaultValue = (entries: EnvVar[], varName: string) => {
-  return entries.find(env => env.name === varName).default;
-};
+import { getEnvDefaultValue } from './expected-env';
 
 export const createConfig = (expectedEnvVariables: EnvVar[]): Config => {
   return {

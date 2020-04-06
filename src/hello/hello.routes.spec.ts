@@ -1,9 +1,10 @@
 import { initServer } from '../core/server';
 import { createConfig } from '../core/config';
-import { expectedEnvVariables } from '../core';
+import { expectedEnvVariables } from '../core/expected-env';
+import { Server } from '@hapi/hapi';
 
 describe('GET /hello', () => {
-  let server;
+  let server: Server;
 
   beforeEach(async () => {
     server = await initServer(createConfig(expectedEnvVariables));
