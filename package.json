@@ -26,6 +26,7 @@
     "@types/hapi__vision": "^5.5.1",
     "@types/jest": "^25.2.1",
     "@types/node": "^13.9.1",
+    "@types/pg": "^7.14.3",
     "dotenv-cli": "^3.1.0",
     "jest": "^25.1.0",
     "ts-jest": "^25.0.0",
@@ -37,6 +38,7 @@
     "@hapi/hapi": "^19.0.5",
     "@hapi/inert": "^6.0.1",
     "@hapi/vision": "^6.0.0",
-    "hapi-swagger": "^12.1.1"
+    "hapi-swagger": "^12.1.1",
+    "pg": "^8.0.0"
   }
 }

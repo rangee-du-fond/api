@@ -1,3 +1,4 @@
+import { registerDataRoutes } from './../data/data.routes';
 import { Config } from './core.d';
 import * as Inert from '@hapi/inert';
 import * as Vision from '@hapi/vision';
@@ -30,6 +31,7 @@ export const initServer = async (config: Config): Promise<Server> => {
   await server.register(plugins);
 
   registerHelloRoutes(server);
+  registerDataRoutes(server);
 
   return server;
 };
