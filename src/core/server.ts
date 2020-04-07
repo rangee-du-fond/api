@@ -9,6 +9,9 @@ import { registerHelloRoutes } from '../hello/hello.routes';
 export const initServer = async (config: Config): Promise<Server> => {
   const server: Server = new Server({
     port: config.serverPort,
+    routes: {
+      cors: true,
+    },
   });
 
   const swaggerOptions: HapiSwagger.RegisterOptions = {
